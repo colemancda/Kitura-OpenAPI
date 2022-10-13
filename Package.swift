@@ -1,4 +1,4 @@
-// swift-tools-version:5.0
+// swift-tools-version:5.1
 // The swift-tools-version declares the minimum version of Swift required to build this package.
 
 import PackageDescription
@@ -11,9 +11,9 @@ let package = Package(
             targets: ["KituraOpenAPI"]),
     ],
     dependencies: [
-        .package(url: "https://github.com/Kitura/Kitura.git", from: "2.9.200"),
-        .package(url: "https://github.com/Kitura/Swift-cfenv.git", from: "6.0.200"),
-        .package(url: "https://github.com/Kitura/LoggerAPI.git", from: "1.9.200"),
+        .package(url: "https://github.com/Kitura/Kitura.git", from: "3.0.0"),
+        .package(url: "https://github.com/ColemanCDA/Swift-cfenv.git", .branch("feature/swift-5_7")),
+        .package(url: "https://github.com/Kitura/LoggerAPI.git", from: "2.0.0"),
     ],
     targets: [
         .target(
